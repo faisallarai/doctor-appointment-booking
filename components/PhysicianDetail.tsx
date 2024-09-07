@@ -6,7 +6,7 @@ import { GraduationCap, MapPin } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react';
 import { Button } from './ui/button';
-import DialogAppointmentButton from './DialogAppointmentButton';
+import DialogAppointmentButton from './BookAppointmentDialogButton';
 
 const PhysicianDetail = ({ physician }: { physician: PhysicianData }) => {
   return (

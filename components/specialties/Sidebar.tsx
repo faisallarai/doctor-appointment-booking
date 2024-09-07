@@ -24,7 +24,7 @@ export function CategorySearch({
 }) {
   const path = usePathname();
   return (
-    <Command className="h-screen flex flex-col mt-5">
+    <Command className="sticky h-screen flex flex-col mt-5">
       <CommandInput placeholder="Type a command or search..." />
       <CommandList className="overflow-visible">
         <CommandEmpty>No results found.</CommandEmpty>

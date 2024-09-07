@@ -23,7 +23,7 @@ interface TimeSlot {
   time: string;
 }
 
-const DialogAppointmentButton = ({
+const BookAppointmentDialogButton = ({
   physician,
 }: {
   physician: PhysicianData;
@@ -136,8 +136,7 @@ const DialogAppointmentButton = ({
                 </div>
               </div>
               <Textarea
-                name={note}
-                value={note}
+                onChange={(e) => setNote(e.target.value)}
                 placeholder="Type your symptoms here."
                 className="mt-3"
               />
@@ -170,4 +169,4 @@ const DialogAppointmentButton = ({
   );
 };
 
-export default DialogAppointmentButton;
+export default BookAppointmentDialogButton;

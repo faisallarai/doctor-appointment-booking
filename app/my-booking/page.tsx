@@ -25,10 +25,18 @@ const MyBooking = () => {
           <TabsTrigger value="expired">Expired</TabsTrigger>
         </TabsList>
         <TabsContent value="upcoming">
-          <BookingList appointments={filterUserBooking('upcoming')} />
+          <BookingList
+            expired={false}
+            // updateRecord={() => getUserAppointmentList(userId)}
+            appointments={filterUserBooking('upcoming')}
+          />
         </TabsContent>
         <TabsContent value="expired">
-          <BookingList appointments={filterUserBooking('expired')} />
+          <BookingList
+            expired={true}
+            // updateRecord={() => getUserAppointmentList(userId)}
+            appointments={filterUserBooking('expired')}
+          />
         </TabsContent>
       </Tabs>
     </div>
